@@ -1,0 +1,49 @@
+@use "../abstract" as abs;
+
+.card {
+    border-radius: 15px;
+}
+
+.card-body {
+    .card-title {
+        color: black;
+        font-size: 23px;
+        font-weight: 500;
+        line-height: 1.4em;
+    }
+
+    .large {
+        max-width: 80%;
+    }
+
+    .card-text {
+        font-size: 17px;
+    }
+
+    .event-time {
+        color: abs.$primary-color;
+    }
+
+    .event-speaker {
+        color: black;
+    }
+}
+
+@media screen and (max-width:767px){
+    .card {
+        text-align: center;
+    }
+
+    .card-body {
+        .large {
+            max-width: 100%;
+        }
+        .card-title {
+            font-size: 20px;
+        }
+        .card-text {
+            font-size: 15px;
+        }
+    
+    }
+}
