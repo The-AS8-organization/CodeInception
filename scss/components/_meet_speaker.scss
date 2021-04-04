@@ -1,0 +1,141 @@
+@use "../abstract" as abs; 
+
+#meet-speaker {
+    display: flex;
+
+    .group {
+        height: 750px;
+        width: 50%;
+        padding-top: 80px;
+        padding-left: 50px;
+        padding-right: 50px;
+        display:flex;
+        flex-wrap: wrap;
+        column-gap: 15px;
+        justify-content: space-evenly;
+
+        .card-speaker {
+            max-width: 14rem;
+            max-height: 10rem;
+            text-align: center;
+        
+            .card-img-top {
+                max-width: 6rem;
+                border-radius: 50%;
+                position: relative;
+                bottom: 40px;
+            }
+        
+            .card-body {
+                position: relative;
+                bottom: 40px;
+                padding: 10px;
+                margin: 0;
+        
+                .card-title {
+                    font-size: 15px;
+                    font-weight: bold;
+                }
+        
+                .card-text {
+                    font-size: 15px;
+                    color: black;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    #group-a {
+        background-color: abs.$primary-color;
+    }
+
+    #group-b {
+        background-color: abs.$secondary-color;
+
+        .card-speaker {
+            background-color: abs.$primary-color;
+            .card-body {
+                .card-title, .card-text {
+                    color: abs.$secondary-color;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:991px) {
+    #meet-speaker {
+        display:block;
+
+        .group {
+            width: 100%;
+            height: 550px;
+            column-gap: 40px;
+        }
+    }    
+}
+
+@media screen and (max-width:767px) {
+    #meet-speaker {
+        .group {
+            height: 450px;
+            column-gap: 20px;
+            padding-left: 0px;
+            padding-right: 0px;
+
+            .card-speaker {
+                max-width: 12rem;
+                max-height: 8rem;
+            
+                .card-img-top {
+                    max-width: 5rem;
+                }
+            
+                .card-body {
+                    padding: 7px;
+            
+                    .card-title {
+                        font-size: 13px;
+                    }
+            
+                    .card-text {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }    
+}
+
+@media screen and (max-width:510px) {
+    #meet-speaker {
+        .group {
+            height: 580px;
+            column-gap: 10px;
+            padding-left: 5px;
+            padding-right: 5px;
+
+            .card-speaker {
+                max-width: 12rem;
+                max-height: 7rem;
+            
+                .card-img-top {
+                    max-width: 4rem;
+                }
+            
+                .card-body {
+                    padding: 8px;
+            
+                    .card-title {
+                        font-size: 13px;
+                    }
+            
+                    .card-text {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }    
+}
