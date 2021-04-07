@@ -10822,6 +10822,8 @@ section {
 
 .card {
   border-radius: 15px;
+  min-width: 190px;
+  max-width: 240px;
 }
 
 .card-body .card-title {
@@ -10850,6 +10852,7 @@ section {
 @media screen and (max-width: 767px) {
   .card {
     text-align: center;
+    min-width: 130px;
   }
 
   .card-body .large {
