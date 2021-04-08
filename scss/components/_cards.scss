@@ -2,6 +2,9 @@
 
 .card {
     border-radius: 15px;
+}
+
+.card-speaker {
     min-width: 190px;
     max-width: 240px;
 }
@@ -34,6 +37,9 @@
 @media screen and (max-width:767px){
     .card {
         text-align: center;
+    }
+    
+    .card-speaker {
         min-width: 130px;
     }
 
