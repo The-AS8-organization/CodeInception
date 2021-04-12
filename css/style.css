@@ -10834,6 +10834,12 @@ section {
   font-size: 23px;
   font-weight: 500;
   line-height: 1.4em;
+  transition-property: all;
+  transition-duration: 500ms;
+}
+
+.card-body .card-title:hover {
+  transform: scale(1.05);
 }
 
 .card-body .large {

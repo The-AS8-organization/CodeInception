@@ -15,6 +15,12 @@
         font-size: 23px;
         font-weight: 500;
         line-height: 1.4em;
+        transition-property: all;
+        transition-duration: 500ms;
+
+        &:hover{
+            transform: scale(1.05);
+        }
     }
 
     .large {
