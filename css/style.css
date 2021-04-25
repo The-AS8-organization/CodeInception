@@ -10747,6 +10747,10 @@ body {
   color: #ea4f4f;
 }
 
+a {
+  text-decoration: none;
+}
+
 section {
   margin-bottom: 200px;
 }
@@ -11126,6 +11130,31 @@ section {
 
   #meet-speaker .group .card-speaker .card-body .card-text {
     font-size: 13px;
+  }
+}
+#partner-section {
+  margin-top: -20px;
+}
+
+#partner {
+  margin-top: -20px;
+}
+
+.partner-logo {
+  margin-top: 5px;
+  width: 300px;
+  margin-bottom: 20px;
+  transition-property: all;
+  transition-duration: 0.3s;
+}
+
+.partner-logo:hover {
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 991px) and (min-width: 767px) {
+  .partner-logo {
+    width: 200px;
   }
 }
 footer {
