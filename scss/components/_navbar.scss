@@ -32,10 +32,14 @@
                 display: block;
             }
         }
-    }
+
     .on {
         display: none;
     }
+    .navbar-toggler {
+        margin-left: auto;
+    }
+}
 }
 
 @media screen and (max-width:991px) {

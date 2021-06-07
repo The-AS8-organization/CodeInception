@@ -10793,8 +10793,12 @@ section {
     display: block;
   }
 
-  .on {
+  .navbar .on {
     display: none;
+  }
+
+  .navbar .navbar-toggler {
+    margin-left: auto;
   }
 }
 @media screen and (max-width: 991px) {
